@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #abb7c3;
+    height: 100vh;
+}
+
+form{
+    text-align: center;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 21px;
+    padding-top: 130px;
+}
+#nombre{
+    font-size: 30px;
+    position: absolute;
+    top: 184px;
+}
+#email{
+    font-size: 30px;
+    position: absolute;
+    top: 244px;
+}
+#pwd{
+    font-size: 30px;
+    position: absolute;
+    top: 300px;
+}
+.btn.btn-primary{
+    font-size: 20px;
+    border: 1px solid transparent;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    cursor: pointer;
+    position: absolute;
+    top: 370px;
+    padding: 5px;
+}
+
+.btn.btn-primary::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #000000;
+    box-shadow: inset 0px 0px 0px #000000;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.btn.btn-primary:hover::before {
+    width:100%;
+}
+.btn.btn-primary::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #000000;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+  }
+  .btn.btn-primary:hover::after {
+    width:100%;
+  }
+  .btn.btn-primary:hover{
+    border-left:1px solid #000000;
+    border-right:1px solid #000000;
+  }
